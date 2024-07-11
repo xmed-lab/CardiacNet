@@ -15,16 +15,21 @@
 </div>
 
 
+**Currently, we are now prepare for the Arxiv version.**
+**The paper can be accessed after few days**
+**The code and dataset is now ready, please follow the instruction to access and download the code and dataset**
+
 ## :hammer: PostScript
 &ensp; :smile: This project is the pytorch implemention of **[[paper](https://arxiv.org/abs/2309.11145)]**.
 
 &ensp; :laughing: Our experimental platform is configured with <u>Four *RTX3090 (cuda>=11.0)*</u>
 
 &ensp; :smiley: The ***CardiacNet (PAH & ASD)*** are currently available at the : 
-&ensp; &ensp; &ensp; &ensp; https://github.com/XiaoweiXu/CardiacNet-dataset.
+
+&ensp;&ensp;&ensp;&ensp;   https://github.com/XiaoweiXu/CardiacNet-dataset.
+
 
 ## :computer: Installation
-
 
 1. You need to build the relevant environment first, please refer to : [**requirements.yaml**](requirements.yaml)
 
@@ -42,6 +47,32 @@
  1.  Please access the dataset through : [XiaoweiXu's Github](https://github.com/XiaoweiXu/)
  2.  Follw the instruction and download.
  3.  Finish dataset download and unzip the datasets.
+      ```python
+         Our Dataset include the CardiacNet-PAH & CardiacNet-ASD
+         The Layer of our dataset *CardiacNet* should be :
+         # CardiacNet-PAH:
+            ## PAH
+               ### 001_image.nii.gz
+               ### 001_label.nii.gz
+               ### ...
+               ### 342_image.nii.gz
+            ## Non-PAH
+               ### 001_image.nii.gz
+               ### 001_label.nii.gz
+               ### ...
+               ### 154_image.nii.gz
+         # CardiacNet-PAH:
+            ## ASD
+               ### 001_image.nii.gz
+               ### 001_label.nii.gz
+               ### ...
+               ### 100_image.nii.gz
+            ## Non-ASD
+               ### 001_image.nii.gz
+               ### 001_label.nii.gz
+               ### ...
+               ### 131_image.nii.gz
+        ```
  4.  Modify your code in the file:
         ```python
         Fine the file
