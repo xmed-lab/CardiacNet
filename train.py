@@ -9,7 +9,6 @@ import torch
 import torch.nn.functional as F
 from torchvision import utils as vutils
 
-
 from model.time_vqgan_template import Classifier, VQGAN, NLayerDiscriminator, NLayerDiscriminator3D
 from model.sinkhorn import SinkhornSolver, sinkhorn_rpm, sinkhorn, sinkhorn_cross_batch
 
