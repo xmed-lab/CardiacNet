@@ -16,8 +16,10 @@
 
 
 **Currently, we are now prepare for the Arxiv version.**
+
 **The paper can be accessed after few days**
-**The code and dataset is now ready, please follow the instruction to access and download the code and dataset**
+
+**The code and dataset is now ready (!!The dataset code will be updated soonly!!), please follow the instruction to access and download the code and dataset**
 
 ## :hammer: PostScript
 &ensp; :smile: This project is the pytorch implemention of **[[paper](https://arxiv.org/abs/2309.11145)]**.
@@ -27,6 +29,7 @@
 &ensp; :smiley: The ***CardiacNet (PAH & ASD)*** are currently available at the : 
 
 &ensp;&ensp;&ensp;&ensp;   https://github.com/XiaoweiXu/CardiacNet-dataset.
+(Our Data Request Page is Under Development. Currently, you can access the dataset via the link : **[[Dataset Link](https://hkustconnect-my.sharepoint.com/:f:/g/personal/jyangcu_connect_ust_hk/EkB0xiTYs4hPkg9uay1LI9QBBI_ETianI42kBmXXYgV12Q?e=nhfagz)]**, Before You Download the Dataset, Please Contact the xiao.wei.xu@foxmail.com.)
 
 
 ## :computer: Installation

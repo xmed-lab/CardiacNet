@@ -62,7 +62,7 @@ class RandomMaskingGenerator:
 
 # data_type=['normal','middle','slight','severe'], ['ASD','None_ASD']
 
-class Seg_PAHDataset(Dataset):
+class CardiacNet(Dataset):
     def __init__(self, args, infos, data_type=['normal','pah'], is_train=True, is_test=False, set_select=['rmyy','gy','shph','szfw'], view_num=['4'], is_video=True):
         self.root = args.dataset_path
         self.data_type = data_type
@@ -417,7 +417,7 @@ if __name__ == '__main__':
     
     from monai.data import DataLoader
     from torchvision import utils as vutils
-    train_ds = Seg_PAHDataset(args, infos, set_select=['rmyy','gy','shph','szfw'], view_num=['4'])
+    train_ds = CardiacNet(args, infos, set_select=['rmyy','gy','shph','szfw'], view_num=['4'])
     train_loader = DataLoader(train_ds, batch_size=4, shuffle=True, num_workers=1)
     from einops import rearrange
     for img, mask, mpap, pasp in tqdm(train_loader):
