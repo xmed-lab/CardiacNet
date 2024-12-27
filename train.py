@@ -16,7 +16,7 @@ from utils.tools import get_world_size, get_global_rank, get_local_rank, get_mas
 from utils.lpips import LPIPS
 from utils.utils import load_data, weights_init, adopt_weight
 
-from data.cardiacnet import CardiacNet
+from data.cardiacnet import CardiacNet_Dataset
 from monai.data import DataLoader
 
 import wandb
@@ -108,9 +108,8 @@ class CardiacNet:
         
         self.prepare_training()
 
-        infos = np.load(f'/home/jyangcu/Dataset/dataset_pa_iltrasound_nii_files_3rdcenters/save_infos_reg_v3.npy', allow_pickle=True).item()
-        train_dataset_normal = Seg_PAHDataset(args, infos, set_select=['gy','rmyy','shph','szfw'], view_num=['4'], data_type=['normal'])
-        train_dataset_abnorm = Seg_PAHDataset(args, infos, set_select=['gy','rmyy','shph','szfw'], view_num=['4'], data_type=['middle', 'severe'])
+        train_dataset_normal = CardiacNet_Dataset(args, select_set=['Non-ASD'], is_video=True, is_train=True)
+        train_dataset_abnorm = CardiacNet_Dataset(args, select_set=['ASD'], is_video=True, is_train=True)
         train_loader_normal = DataLoader(train_dataset_normal, batch_size=args.batch_size, shuffle=True, num_workers=8)
 
         self.train(args, train_loader_normal, train_dataset_abnorm)
