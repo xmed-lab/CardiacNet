@@ -29,7 +29,9 @@
 &ensp; :smiley: The ***CardiacNet (PAH & ASD)*** are currently available at the : 
 
 &ensp;&ensp;&ensp;&ensp;   https://github.com/XiaoweiXu/CardiacNet-dataset.
-(Our Data Request Page is Under Development. Currently, you can access the dataset via the link : **[[Dataset Link](https://hkustconnect-my.sharepoint.com/:f:/g/personal/jyangcu_connect_ust_hk/EkB0xiTYs4hPkg9uay1LI9QBBI_ETianI42kBmXXYgV12Q?e=nhfagz)]**, Before You Download the Dataset, Please Contact the xiao.wei.xu@foxmail.com.)
+
+- Currently, you can access the dataset via the link : **[[Dataset Link](https://hkustconnect-my.sharepoint.com/:f:/g/personal/jyangcu_connect_ust_hk/EkB0xiTYs4hPkg9uay1LI9QBBI_ETianI42kBmXXYgV12Q?e=nhfagz)]**, or **[[Kaggle Link](https://www.kaggle.com/datasets/xiaoweixumedicalai/abnormcardiacechovideos)]** 
+- Note: Before You Download the Dataset, Please Contact the xiao.wei.xu@foxmail.com.
 
 
 ## :computer: Installation
